@@ -501,14 +501,12 @@ body,.site-shell{background:var(--charcoal);color:var(--cream)}
     height: 60vh;
   }
 }
-/* your existing CSS... */
-
-
-/* Mobile project title sizing */
+/* Make Netfender and Mindmend match Baby Forum on mobile */
 @media (max-width: 600px) {
-  .project-title {
-    font-size: 64px !important;
-    line-height: 0.95 !important;
-    letter-spacing: -2px !important;
+  .text-project h3 {
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
   }
 }
