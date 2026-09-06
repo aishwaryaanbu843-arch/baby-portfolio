@@ -584,3 +584,12 @@ body,.site-shell{background:var(--charcoal);color:var(--cream)}
     animation: none !important;
   }
 }
+/* Fix Achievement blur on desktop */
+@media (min-width: 801px) {
+  .achievement.reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    animation: none !important;
+  }
+}
