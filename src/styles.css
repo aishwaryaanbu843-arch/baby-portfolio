@@ -575,3 +575,12 @@ body,.site-shell{background:var(--charcoal);color:var(--cream)}
     overflow-wrap: anywhere;
   }
 }
+/* Fix blurred reveal elements on mobile */
+@media (max-width: 800px) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    animation: none !important;
+  }
+}
