@@ -91,9 +91,9 @@ function App() {
           <p className="eyebrow hero-eyebrow">Computer Science / Creative Practice</p>
           <div className="name-hero-stage" style={{ transform: `translateY(${heroProgress * -8}vh)`, opacity: 1 - heroProgress * 0.25 }}>
             <h1 className={`name-title ${heroReady ? 'is-ready' : ''}`} aria-label="Bhuvanesh S.">{heroLetters.map((letter, index) => { const isSpace = letter === ' '; const distance = Math.abs(index - (heroLetters.length / 2)); const pull = heroReady ? (1 - Math.min(distance / 7, 1)) : 0; const wave = heroReady ? Math.sin(index * 0.9 + heroPointer.x * 3) * pull * 2 : 0; const tilt = heroReady ? heroPointer.x * pull * 1.8 : 0; const scale = heroReady ? 1 + Math.abs(heroPointer.x) * pull * 0.018 : 1; return <span className={isSpace ? 'name-space' : ''} style={{ '--i': index, '--mx': `${heroPointer.x * pull * 12}px`, '--my': `${heroPointer.y * pull * 8 + wave}px`, '--tilt': `${tilt}deg`, '--letter-scale': scale, '--scroll-x': `${(index - 5) * heroProgress * 3}px` }} key={`${letter}-${index}`}>{isSpace ? '\u00a0' : letter}</span> })}</h1>
-            <p className="name-subtitle">Creative Developer</p>
+            <p className="name-subtitle">Computer Science / Creative Developer</p>
           </div>
-          <div className="name-identity"><strong>Bhuvanesh S</strong><span>Computer Science / Creative Developer</span></div>
+          
           <button className="scroll-cue" onClick={() => scrollTo('about')}><span>Scroll to explore</span><b>↓</b></button>
           <span className="hero-index">00 / 06</span>
         </section>
