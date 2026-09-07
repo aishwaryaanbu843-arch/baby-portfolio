@@ -140,8 +140,28 @@ function App() {
           <div className="section-top"><span className="section-number">03</span><span className="eyebrow">Projects</span><span className="section-rule" /></div>
           <div className="projects-heading reveal"><h2>Selected <em>projects.</em></h2><p>A growing archive of projects, ideas and visual studies.</p></div>
           <div className="project-scenes">
-            <article className="project-scene nexora-scene reveal"><div className="scene-label"><span>Project 01</span><span>Visual study / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(nexoraImages[0]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img src={nexoraImages[0].src} alt={nexoraImages[0].alt} /><span>Open visual ↗</span></button><button className="scene-float-image" onClick={() => { setSelectedImage(nexoraImages[1]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img src={nexoraImages[1].src} alt={nexoraImages[1].alt} /></button></div><div className="scene-copy"><span className="project-number">01</span><div><p className="eyebrow">AI-powered exam preparation platform</p><h3>Nexora</h3><p>Presented at Techno Bot 2026, where Nexora received 2nd Prize.</p><div className="scene-meta"><span>AI / LLM</span><span>Exam preparation</span><span>Visual archive</span></div><a className="scene-link" href="https://github.com/Bhuvanesh0097/Nexora" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></article>
-            <article className="project-scene forum-scene reveal"><div className="scene-label"><span>Project 02</span><span>Interface archive / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(babyForumImages[0]); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img src={babyForumImages[0].src} alt={babyForumImages[0].alt} /><span>Open project ↗</span></button><div className="scene-stack">{babyForumImages.slice(1, 4).map(image => <button key={image.src} onClick={() => { setSelectedImage(image); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img src={image.src} alt={image.alt} loading="lazy" /></button>)}</div></div><div className="scene-copy"><span className="project-number">02</span><div><p className="eyebrow">Featured project</p><h3>Baby Forum</h3><p>An interactive community/forum web application focused on creating, sharing and discussing posts.</p><div className="scene-meta"><span>Community</span><span>Web application</span><span>4 screens</span></div></div></div></article>
+            <article className="project-scene nexora-scene reveal"><div className="scene-label"><span>Project 01</span><span>Visual study / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(nexoraImages[0]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img src={nexoraImages[0].src} alt={nexoraImages[0].alt} /><span>Open visual ↗</span></button><button className="scene-float-image" onClick={() => { setSelectedImage(nexoraImages[1]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img src={nexoraImages[1].src} alt={nexoraImages[1].alt} /></button></div><div className="scene-copy"><span className="project-number">01</span><div><p className="eyebrow">AI-powered exam preparation platform</p><h3>Nexora</h3><p>Presented at Techno Bot 2026, where Nexora received 2nd Prize.</p><div className="scene-meta"><span>AI / LLM</span><span>Exam preparation</span><span>Visual archive</span></div><a className="scene-link" href="https://github.com/Bhuvanesh0097/Nexora" target="_blank" rel="noreferrer">GitHub ↗</a><a
+  className="scene-link"
+  href="https://nexora-red-beta.vercel.app/"
+  target="_blank"
+  rel="noreferrer"
+>
+  Live Demo ↗
+</a></div></div></article>
+            <article className="project-scene forum-scene reveal"><div className="scene-label"><span>Project 02</span><span>Interface archive / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(babyForumImages[0]); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img src={babyForumImages[0].src} alt={babyForumImages[0].alt} /><span>Open project ↗</span></button><div className="scene-stack">{babyForumImages.slice(1, 4).map(image => <button key={image.src} onClick={() => { setSelectedImage(image); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img src={image.src} alt={image.alt} loading="lazy" /></button>)}</div></div><div className="scene-copy"><span className="project-number">02</span><div><p className="eyebrow">Featured project</p><h3>Baby Forum</h3><p>An interactive community/forum web application focused on creating, sharing and discussing posts.</p><div className="scene-meta"><span>Community</span><span>Web application</span><span>4 screens</span></div><div className="scene-meta">
+  <span>Community</span>
+  <span>Web application</span>
+  <span>4 screens</span>
+</div>
+
+<a
+  className="scene-link"
+  href="https://baby-forum.netlify.app/"
+  target="_blank"
+  rel="noreferrer"
+>
+  Live Demo ↗
+</a></div></div></article>
           </div>
           <div className="text-projects">{projects.slice(2).map(project => <article className="text-project reveal" key={project.name}><span>{project.number}</span><h3>{project.name}</h3><p>{project.copy}</p>{project.github && (
   <a
