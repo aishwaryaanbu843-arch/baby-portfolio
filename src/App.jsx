@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const navItems = ['Home', 'About', 'Journey', 'Projects', 'Skills', 'Proof', 'Contact']
+const navItems = ['Home', 'About', 'Journey', 'Projects', 'Skills', 'Resume', 'Contact']
 
 const projects = [
   { number: '01', name: 'NEXORA', type: 'AI-powered exam preparation platform', copy: 'Presented at Techno Bot 2026, where Nexora received 2nd Prize.', tone: 'ember', github: 'https://github.com/Bhuvanesh0097/Nexora' },
@@ -93,7 +93,24 @@ function App() {
             <h1 className={`name-title ${heroReady ? 'is-ready' : ''}`} aria-label="Bhuvanesh S.">{heroLetters.map((letter, index) => { const isSpace = letter === ' '; const distance = Math.abs(index - (heroLetters.length / 2)); const pull = heroReady ? (1 - Math.min(distance / 7, 1)) : 0; const wave = heroReady ? Math.sin(index * 0.9 + heroPointer.x * 3) * pull * 2 : 0; const tilt = heroReady ? heroPointer.x * pull * 1.8 : 0; const scale = heroReady ? 1 + Math.abs(heroPointer.x) * pull * 0.018 : 1; return <span className={isSpace ? 'name-space' : ''} style={{ '--i': index, '--mx': `${heroPointer.x * pull * 12}px`, '--my': `${heroPointer.y * pull * 8 + wave}px`, '--tilt': `${tilt}deg`, '--letter-scale': scale, '--scroll-x': `${(index - 5) * heroProgress * 3}px` }} key={`${letter}-${index}`}>{isSpace ? '\u00a0' : letter}</span> })}</h1>
             <p className="name-subtitle">Computer Science / Creative Developer</p>
           </div>
-          
+          <div className="resume-actions">
+  <a
+    href="/resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="resume-button"
+  >
+    View Resume
+  </a>
+
+  <a
+    href="/resume.pdf"
+    download="Bhuvanesh-S-Resume.pdf"
+    className="resume-button resume-button-secondary"
+  >
+    Download Resume
+  </a>
+</div>
           <button className="scroll-cue" onClick={() => scrollTo('about')}><span>Scroll to explore</span><b>↓</b></button>
           <span className="hero-index">00 / 06</span>
         </section>
