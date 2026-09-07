@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react'
 const navItems = ['Home', 'About', 'Journey', 'Projects', 'Skills', 'Resume', 'Contact']
 
 const projects = [
-  { number: '01', name: 'NEXORA', type: 'AI-powered exam preparation platform', copy: 'Presented at Techno Bot 2026, where Nexora received 2nd Prize.', tone: 'ember', github: 'https://github.com/Bhuvanesh0097/Nexora' },
-  { number: '02', name: 'BABY FORUM', type: 'Featured project', copy: 'An interactive community/forum web application focused on creating, sharing and discussing posts.', tone: 'paper' },
+  { number: '01', name: 'NEXORA', type: 'AI-powered exam preparation platform', copy: 'Presented at Techno Bot 2026, where Nexora received 2nd Prize.', tone: 'ember', liveDemo: 'https://nexora-red-beta.vercel.app/',github: 'https://github.com/Bhuvanesh0097/Nexora' },
+  { number: '02', name: 'BABY FORUM', type: 'Featured project', copy: 'An interactive community/forum web application focused on creating, sharing and discussing posts.', tone: 'paper', liveDemo: 'https://baby-forum.netlify.app/' },
   { number: '03', name: 'NETFENDER', type: 'Project', copy: 'A portfolio project. Details and a visual case study will be added here as the work evolves.', tone: 'ink', github: 'https://github.com/Bhuvanesh0097/NetFender' },
   { number: '04', name: 'MINDMEND', type: 'Project', copy: 'A portfolio project. Details and a visual case study will be added here as the work evolves.', tone: 'clay', github: 'https://github.com/Bhuvanesh0097/MindMend' },
 ]
