@@ -665,3 +665,6 @@ body,.site-shell{background:var(--charcoal);color:var(--cream)}
     font-size: 10px;
   }
 }
+.text-project-link + .text-project-link {
+  margin-left: 24px !important;
+}
