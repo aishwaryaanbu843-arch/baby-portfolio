@@ -194,7 +194,32 @@ function App() {
           <div className="section-top"><span className="section-number">03</span><span className="eyebrow">Projects</span><span className="section-rule" /></div>
           <div className="projects-heading reveal"><h2>Selected <em>projects.</em></h2><p>A growing archive of projects, ideas and visual studies.</p></div>
           <div className="project-scenes">
-            <article className="project-scene nexora-scene reveal"><div className="scene-label"><span>Project 01</span><span>Visual study / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(nexoraImages[0]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img src={nexoraImages[0].src} alt={nexoraImages[0].alt} /><span>Open visual ↗</span></button><button className="scene-float-image" onClick={() => { setSelectedImage(nexoraImages[1]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img src={nexoraImages[1].src} alt={nexoraImages[1].alt} /></button></div><div className="scene-copy"><span className="project-number">01</span><div><p className="eyebrow">AI-powered exam preparation platform</p><h3>Nexora</h3><p>Presented at Techno Bot 2026, where Nexora received 2nd Prize.</p><div className="scene-meta"><span>AI / LLM</span><span>Exam preparation</span><span>Visual archive</span></div><a className="scene-link" href="https://github.com/Bhuvanesh0097/Nexora" target="_blank" rel="noreferrer">GitHub ↗</a><a
+            <article className="project-scene nexora-scene reveal"><div className="scene-label"><span>Project 01</span><span>Visual study / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(nexoraImages[0]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img src={nexoraImages[0].src} alt={nexoraImages[0].alt} /><span>Open visual ↗</span></button><button className="scene-float-image" onClick={() => { setSelectedImage(nexoraImages[1]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img src={nexoraImages[1].src} alt={nexoraImages[1].alt} /></button></div><div className="scene-copy"><span className="project-number">01</span><div><p className="eyebrow">AI-powered exam preparation platform</p><h3>Nexora</h3><p>Presented at Techno Bot 2026, where Nexora received 2nd Prize.</p><div className="project-details">
+  <div>
+    <span className="detail-label">Problem</span>
+    <p>{projects[0].problem}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">Solution</span>
+    <p>{projects[0].solution}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">Tech Stack</span>
+    <p>{projects[0].techStack.join(' • ')}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">My Contribution</span>
+    <p>{projects[0].contribution}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">Outcome</span>
+    <p>{projects[0].outcome}</p>
+  </div>
+</div><div className="scene-meta"><span>AI / LLM</span><span>Exam preparation</span><span>Visual archive</span></div><a className="scene-link" href="https://github.com/Bhuvanesh0097/Nexora" target="_blank" rel="noreferrer">GitHub ↗</a><a
   className="scene-link"
   href="https://nexora-red-beta.vercel.app/"
   target="_blank"
