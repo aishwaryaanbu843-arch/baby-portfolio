@@ -163,31 +163,39 @@ function App() {
   Live Demo ↗
 </a></div></div></article>
           </div>
-          <div className="text-projects">{projects.slice(2).map(project => <article className="text-project reveal" key={project.name}><span>{project.number}</span><h3>{project.name}</h3><p>{project.copy}</p>{project.github && (
-  <a
-    className="text-project-link"
-    href={project.github}
-    target="_blank"
-    rel="noreferrer"
-  >
-    GitHub ↗
-  </a>
+          <div className="text-projects">{projects.slice(2).map(project => <article className="text-project reveal" key={project.name}><span>{project.number}</span><h3>{project.name}</h3><p>{project.copy}</p>
+  <div className="project-links">
+  {project.github && (
+    <a
+      className="text-project-link"
+      href={project.github}
+      target="_blank"
+      rel="noreferrer"
+    >
+      GitHub ↗
+    </a>
+  )}
+
+  {project.liveDemo && (
+    <a
+      className="text-project-link"
+      href={project.liveDemo}
+      target="_blank"
+      rel="noreferrer"
+    >
+      Live Demo ↗
+    </a>
+  )}
+</div>
+
+<i>...</i>
+<i>↗</i>
+
+</article>
 )}
 
-{project.liveDemo && (
-  <a
-    className="text-project-link"
-    href={project.liveDemo}
-    target="_blank"
-    rel="noreferrer"
-  >
-    Live Demo ↗
-  </a>
-)}
-
-<i>...</i><i>↗</i></article>)}</div>
-        </section>
-
+</div>
+</section>
         <section className="section skills-section" id="skills">
           <div className="section-top"><span className="section-number">04</span><span className="eyebrow">Skills</span><span className="section-rule" /></div>
           <div className="skills-layout reveal"><div><h2>The toolkit<br /><em>keeps growing.</em></h2><p className="skills-note">No percentages. Just a working list of things I enjoy learning and using.</p></div><div className="skill-explorer"><div className="skill-tabs">{Object.keys(skills).map(category => <button className={activeSkill === category ? 'active' : ''} onClick={() => setActiveSkill(category)} key={category}>{category}<span>↗</span></button>)}</div><div className="skill-cloud">{skills[activeSkill].map((skill, index) => <span style={{ '--delay': `${index * 60}ms` }} key={skill}>{skill}</span>)}</div></div></div>

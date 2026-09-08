@@ -672,3 +672,12 @@ body,.site-shell{background:var(--charcoal);color:var(--cream)}
 .text-project-link ~ .text-project-link {
   margin-left: 30px !important;
 }
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.project-links .text-project-link {
+  margin: 0 !important;
+}
