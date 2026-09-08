@@ -2,11 +2,65 @@ import { useEffect, useState } from 'react'
 
 const navItems = ['Home', 'About', 'Journey', 'Projects', 'Skills', 'Resume', 'Contact']
 
-const projects = [
-  { number: '01', name: 'NEXORA', type: 'AI-powered exam preparation platform', copy: 'Presented at Techno Bot 2026, where Nexora received 2nd Prize.', tone: 'ember', liveDemo: 'https://nexora-red-beta.vercel.app/',github: 'https://github.com/Bhuvanesh0097/Nexora' },
-  { number: '02', name: 'BABY FORUM', type: 'Featured project', copy: 'An interactive community/forum web application focused on creating, sharing and discussing posts.', tone: 'paper', liveDemo: 'https://baby-forum.netlify.app/' },
-  { number: '03', name: 'NETFENDER', type: 'Project', copy: 'A portfolio project. Details and a visual case study will be added here as the work evolves.', tone: 'ink', github: 'https://github.com/Bhuvanesh0097/NetFender' },
-  { number: '04', name: 'MINDMEND', type: 'Project', copy: 'A portfolio project. Details and a visual case study will be added here as the work evolves.', tone: 'clay', github: 'https://github.com/Bhuvanesh0097/MindMend' },
+ const projects = [
+  {
+    number: '01',
+    name: 'NEXORA',
+    type: 'AI-powered exam preparation platform',
+    copy: 'An AI-powered exam preparation and study assistant using RAG and ChromaDB, with exam modes, document-based learning, progress tracking and an AI study planner.',
+    problem: 'Students need focused, syllabus-restricted preparation instead of generic AI responses.',
+    solution: 'Built an AI study assistant with RAG-based learning, document uploads and personalized study planning.',
+    techStack: ['AI / LLM', 'RAG', 'ChromaDB'],
+    contribution: 'Developed the core study-assistant features, exam modes, document-based learning and study-planning workflow.',
+    outcome: '2nd Prize — Techno Bot 2026',
+    tone: 'ember',
+    github: 'https://github.com/Bhuvanesh0097/Nexora',
+    liveDemo: 'https://nexora-red-beta.vercel.app/'
+  },
+
+  {
+    number: '02',
+    name: 'BABY FORUM',
+    type: 'Featured project',
+    copy: 'An interactive community/forum web application focused on creating, sharing and discussing posts.',
+    problem: 'Users need a simple platform to create, share and discuss community posts.',
+    solution: 'Built a web-based community/forum experience centered around post creation, sharing and discussion.',
+    techStack: ['Web Application'],
+    contribution: 'Designed and developed the portfolio project experience and its visual interface.',
+    outcome: 'Live web application',
+    tone: 'paper',
+    liveDemo: 'https://baby-forum.netlify.app/'
+  },
+
+  {
+    
+  number: '03',
+  name: 'NETFENDER',
+  type: 'AI-powered phishing detection system',
+  copy: 'An AI-powered phishing detection system that analyzes emails and SMS in near-real-time.',
+  problem: 'Users need faster detection of phishing threats across email and mobile messages.',
+  solution: 'Built a detection system with email processing and mobile integration.',
+  techStack: ['AI', 'IMAP', 'SMTP', 'ADB'],
+  contribution: 'Built the phishing-detection workflow and integrated email and Android communication interfaces.',
+  outcome: "AURISTRA'26 Hackathon project",
+  tone: 'ink',
+  github: 'https://github.com/Bhuvanesh0097/NetFender'
+},
+  
+
+  {
+    number: '04',
+    name: 'MINDMEND',
+    type: 'AI-based stress detection system',
+    copy: 'An AI-based web application that detects and classifies stress levels from voice signals.',
+    problem: 'Stress levels can be difficult to identify consistently from user interactions alone.',
+    solution: 'Built a voice-based stress detection system using deep learning for feature extraction and temporal analysis.',
+    techStack: ['Python', 'CNN', 'LSTM'],
+    contribution: 'Developed the stress-detection workflow using CNN and LSTM-based analysis.',
+    outcome: '85% accuracy • 32% reduction in user-reported stress levels',
+    tone: 'clay',
+    github: 'https://github.com/Bhuvanesh0097/MindMend'
+  }
 ]
 
 const skills = {
