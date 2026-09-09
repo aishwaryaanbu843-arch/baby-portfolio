@@ -199,7 +199,11 @@ function App() {
           <div className="section-top"><span className="section-number">03</span><span className="eyebrow">Projects</span><span className="section-rule" /></div>
           <div className="projects-heading reveal"><h2>Selected <em>projects.</em></h2><p>A growing archive of projects, ideas and visual studies.</p></div>
           <div className="project-scenes">
-            <article className="project-scene nexora-scene reveal"><div className="scene-label"><span>Project 01</span><span>Visual study / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(nexoraImages[0]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img src={nexoraImages[0].src} alt={nexoraImages[0].alt} /><span>Open visual ↗</span></button><button className="scene-float-image" onClick={() => { setSelectedImage(nexoraImages[1]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img src={nexoraImages[1].src} alt={nexoraImages[1].alt} /></button></div><div className="scene-copy"><span className="project-number">01</span><div><p className="eyebrow">AI-powered exam preparation platform</p><h3>Nexora</h3><p>Presented at Techno Bot 2026, where Nexora received 2nd Prize.</p><div className="project-details">
+            <article className="project-scene nexora-scene reveal"><div className="scene-label"><span>Project 01</span><span>Visual study / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(nexoraImages[0]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img
+  src={nexoraImages[0].src}
+  alt={nexoraImages[0].alt}
+  loading="lazy"
+/><span>Open visual ↗</span></button><button className="scene-float-image" onClick={() => { setSelectedImage(nexoraImages[1]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img src={nexoraImages[1].src} alt={nexoraImages[1].alt} /></button></div><div className="scene-copy"><span className="project-number">01</span><div><p className="eyebrow">AI-powered exam preparation platform</p><h3>Nexora</h3><p>Presented at Techno Bot 2026, where Nexora received 2nd Prize.</p><div className="project-details">
   <div>
     <span className="detail-label">Problem</span>
     <p>{projects[0].problem}</p>
@@ -232,7 +236,11 @@ function App() {
 >
   Live Demo ↗
 </a></div></div></article>
-            <article className="project-scene forum-scene reveal"><div className="scene-label"><span>Project 02</span><span>Interface archive / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(babyForumImages[0]); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img src={babyForumImages[0].src} alt={babyForumImages[0].alt} /><span>Open project ↗</span></button><div className="scene-stack">{babyForumImages.slice(1, 4).map(image => <button key={image.src} onClick={() => { setSelectedImage(image); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img src={image.src} alt={image.alt} loading="lazy" /></button>)}</div></div><div className="scene-copy"><span className="project-number">02</span><div><p className="eyebrow">Featured project</p><h3>Baby Forum</h3><p>An interactive community/forum web application focused on creating, sharing and discussing posts.</p><div className="project-details">
+            <article className="project-scene forum-scene reveal"><div className="scene-label"><span>Project 02</span><span>Interface archive / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(babyForumImages[0]); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img
+  src={babyForumImages[0].src}
+  alt={babyForumImages[0].alt}
+  loading="lazy"
+/><span>Open project ↗</span></button><div className="scene-stack">{babyForumImages.slice(1, 4).map(image => <button key={image.src} onClick={() => { setSelectedImage(image); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img src={image.src} alt={image.alt} loading="lazy" /></button>)}</div></div><div className="scene-copy"><span className="project-number">02</span><div><p className="eyebrow">Featured project</p><h3>Baby Forum</h3><p>An interactive community/forum web application focused on creating, sharing and discussing posts.</p><div className="project-details">
   <div>
     <span className="detail-label">Problem</span>
     <p>{projects[1].problem}</p>
