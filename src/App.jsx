@@ -227,11 +227,33 @@ function App() {
 >
   Live Demo ↗
 </a></div></div></article>
-            <article className="project-scene forum-scene reveal"><div className="scene-label"><span>Project 02</span><span>Interface archive / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(babyForumImages[0]); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img src={babyForumImages[0].src} alt={babyForumImages[0].alt} /><span>Open project ↗</span></button><div className="scene-stack">{babyForumImages.slice(1, 4).map(image => <button key={image.src} onClick={() => { setSelectedImage(image); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img src={image.src} alt={image.alt} loading="lazy" /></button>)}</div></div><div className="scene-copy"><span className="project-number">02</span><div><p className="eyebrow">Featured project</p><h3>Baby Forum</h3><p>An interactive community/forum web application focused on creating, sharing and discussing posts.</p><div className="scene-meta"><span>Community</span><span>Web application</span><span>4 screens</span></div><div className="scene-meta">
-  <span>Community</span>
-  <span>Web application</span>
-  <span>4 screens</span>
-</div>
+            <article className="project-scene forum-scene reveal"><div className="scene-label"><span>Project 02</span><span>Interface archive / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(babyForumImages[0]); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img src={babyForumImages[0].src} alt={babyForumImages[0].alt} /><span>Open project ↗</span></button><div className="scene-stack">{babyForumImages.slice(1, 4).map(image => <button key={image.src} onClick={() => { setSelectedImage(image); setLightboxImages(babyForumImages); setLightboxOpen(true) }}><img src={image.src} alt={image.alt} loading="lazy" /></button>)}</div></div><div className="scene-copy"><span className="project-number">02</span><div><p className="eyebrow">Featured project</p><h3>Baby Forum</h3><p>An interactive community/forum web application focused on creating, sharing and discussing posts.</p><div className="project-details">
+  <div>
+    <span className="detail-label">Problem</span>
+    <p>{projects[1].problem}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">Solution</span>
+    <p>{projects[1].solution}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">Tech Stack</span>
+    <p>{projects[1].techStack.join(' • ')}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">My Contribution</span>
+    <p>{projects[1].contribution}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">Outcome</span>
+    <p>{projects[1].outcome}</p>
+  </div>
+</div><div className="scene-meta"><span>Community</span><span>Web application</span><span>4 screens</span></div>
+  
 
 <a
   className="scene-link"
