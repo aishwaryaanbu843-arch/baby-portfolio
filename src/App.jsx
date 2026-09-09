@@ -30,7 +30,7 @@ const navItems = ['Home', 'About', 'Journey', 'Projects', 'Skills', 'Resume', 'C
     outcome: 'Live web application',
     tone: 'paper',
     liveDemo: 'https://baby-forum.netlify.app/',
-    github: 'https://github.com/Bhuvanesh0097/Baby-Forum' 
+    github: 'https://github.com/Bhuvanesh0097/Baby-Forum'
   },
 
   {
@@ -263,6 +263,14 @@ function App() {
   rel="noreferrer"
 >
   Live Demo ↗
+</a>
+<a
+  className="scene-link"
+  href="https://github.com/Bhuvanesh0097/Baby-Forum"
+  target="_blank"
+  rel="noreferrer"
+>
+  GitHub ↗
 </a></div></div></article>
           </div>
           <div className="text-projects">{projects.slice(2).map(project => <article className="text-project reveal" key={project.name}><span>{project.number}</span><h3>{project.name}</h3><p>{project.copy}</p>
