@@ -8,10 +8,10 @@ const navItems = ['Home', 'About', 'Journey', 'Projects', 'Skills', 'Resume', 'C
     name: 'NEXORA',
     type: 'AI-powered exam preparation platform',
     copy: 'An AI-powered exam preparation and study assistant using RAG and ChromaDB, with exam modes, document-based learning, progress tracking and an AI study planner.',
-    problem: 'Students need focused, syllabus-restricted preparation instead of generic AI responses.',
+    problem: 'Students need focused, syllabus-specific preparation instead of generic AI responses.',
     solution: 'Built an AI study assistant with RAG-based learning, document uploads and personalized study planning.',
     techStack: ['AI / LLM', 'RAG', 'ChromaDB'],
-    contribution: 'Developed the core study-assistant features, exam modes, document-based learning and study-planning workflow.',
+    contribution: 'Worked on the study-assistant features, exam modes, document-based learning and study-planning workflow.',
     outcome: '2nd Prize — Techno Bot 2026',
     tone: 'ember',
     github: 'https://github.com/Bhuvanesh0097/Nexora',
@@ -26,8 +26,8 @@ const navItems = ['Home', 'About', 'Journey', 'Projects', 'Skills', 'Resume', 'C
     problem: 'Users need a simple platform to create, share and discuss community posts.',
     solution: 'Built a web-based community/forum experience centered around post creation, sharing and discussion.',
     techStack: ['Web Application'],
-    contribution: 'Designed and developed the portfolio project experience and its visual interface.',
-    outcome: 'Live web application',
+    contribution: 'Designed and developed the web experience and visual interface for the project.',
+    outcome: 'Deployed as a live web application',
     tone: 'paper',
     liveDemo: 'https://baby-forum.netlify.app/',
     github: 'https://github.com/Bhuvanesh0097/Baby-Forum'
@@ -42,8 +42,8 @@ const navItems = ['Home', 'About', 'Journey', 'Projects', 'Skills', 'Resume', 'C
   problem: 'Users need faster detection of phishing threats across email and mobile messages.',
   solution: 'Built a detection system with email processing and mobile integration.',
   techStack: ['AI', 'IMAP', 'SMTP', 'ADB'],
-  contribution: 'Built the phishing-detection workflow and integrated email and Android communication interfaces.',
-  outcome: "AURISTRA'26 Hackathon project",
+  contribution: 'Worked on the phishing-detection workflow and integrated email and Android communication interfaces.',
+  outcome: "Project developed for AURISTRA'26 Hackathon",
   tone: 'ink',
   github: 'https://github.com/Bhuvanesh0097/NetFender'
 },
@@ -108,7 +108,7 @@ function App() {
   const [heroReady, setHeroReady] = useState(false)
 
   useEffect(() => {
-    const sections = ['top', 'about', 'journey', 'projects', 'skills', 'proof', 'contact'].map(id => document.getElementById(id)).filter(Boolean)
+    const sections = ['top', 'about', 'journey', 'projects', 'skills', 'contact'].map(id => document.getElementById(id)).filter(Boolean)
     const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) setActiveSection(entry.target.id) }), { rootMargin: '-35% 0px -55% 0px' })
     sections.forEach(section => observer.observe(section))
     const updateProgress = () => {
@@ -146,7 +146,7 @@ function App() {
           <p className="eyebrow hero-eyebrow">Computer Science / Creative Practice</p>
           <div className="name-hero-stage" style={{ transform: `translateY(${heroProgress * -8}vh)`, opacity: 1 - heroProgress * 0.25 }}>
             <h1 className={`name-title ${heroReady ? 'is-ready' : ''}`} aria-label="Bhuvanesh S.">{heroLetters.map((letter, index) => { const isSpace = letter === ' '; const distance = Math.abs(index - (heroLetters.length / 2)); const pull = heroReady ? (1 - Math.min(distance / 7, 1)) : 0; const wave = heroReady ? Math.sin(index * 0.9 + heroPointer.x * 3) * pull * 2 : 0; const tilt = heroReady ? heroPointer.x * pull * 1.8 : 0; const scale = heroReady ? 1 + Math.abs(heroPointer.x) * pull * 0.018 : 1; return <span className={isSpace ? 'name-space' : ''} style={{ '--i': index, '--mx': `${heroPointer.x * pull * 12}px`, '--my': `${heroPointer.y * pull * 8 + wave}px`, '--tilt': `${tilt}deg`, '--letter-scale': scale, '--scroll-x': `${(index - 5) * heroProgress * 3}px` }} key={`${letter}-${index}`}>{isSpace ? '\u00a0' : letter}</span> })}</h1>
-            <p className="name-subtitle">Computer Science / Creative Developer</p>
+            <p className="name-subtitle">Computer Science • Creative Developer</p>
           </div>
           <div className="resume-actions">
   <a
@@ -178,13 +178,15 @@ function App() {
   I build with <em>curiosity.</em>
   <br />
   I create with <em>purpose.</em>
-</h2><p className="lead">Computer Science student building thoughtful digital experiences across backend, web development and AI.</p><p>My interests move between backend development, cloud computing, AI / LLM applications, automation and SEO. I like practical systems, clear interfaces and the small decisions that make digital work feel considered.</p><span className="signature">Bhuvanesh S <small>— currently learning in public</small></span></div>
+</h2><p className="lead">
+  Computer Science student exploring backend development, web development, AI and cloud computing through projects, internships and hands-on learning.
+</p><p>My interests move between backend development, cloud computing, AI / LLM applications, automation and SEO. I like practical systems, clear interfaces and the small decisions that make digital work feel considered.</p><span className="signature">Bhuvanesh S <small>— currently learning in public</small></span></div>
           </div>
         </section>
 
         <section className="section journey-section" id="journey">
           <div className="section-top"><span className="section-number">02</span><span className="eyebrow">Journey</span><span className="section-rule" /></div>
-          <div className="journey-heading reveal"><h2>A timeline of <em>becoming.</em></h2><p>Education, internships and the first rooms where ideas became real work.</p></div>
+          <div className="journey-heading reveal"><h2>A timeline of <em>learning.</em></h2><p>My education, internships and the experiences shaping how I build software.</p></div>
           <div className="journey-timeline-wrap">
           <div className="timeline">
             <article className="timeline-item reveal"><div className="timeline-date">2024 — 2028</div><div className="timeline-marker" /><div><span className="timeline-kind">Education</span><h3>Manakula Vinayagar<br />Institute of Technology</h3><p>B.Tech Computer Science</p><strong>CGPA: 8.6</strong></div><div className="timeline-evidence-empty" /></article>
@@ -197,7 +199,7 @@ function App() {
 
         <section className="section projects-section" id="projects">
           <div className="section-top"><span className="section-number">03</span><span className="eyebrow">Projects</span><span className="section-rule" /></div>
-          <div className="projects-heading reveal"><h2>Selected <em>projects.</em></h2><p>A growing archive of projects, ideas and visual studies.</p></div>
+          <div className="projects-heading reveal"><h2>Selected <em>projects.</em></h2><p>A focused selection of projects built across AI, backend development and web development.</p></div>
           <div className="project-scenes">
             <article className="project-scene nexora-scene reveal"><div className="scene-label"><span>Project 01</span><span>Visual study / 2026</span></div><div className="scene-art"><button className="scene-main-image" onClick={() => { setSelectedImage(nexoraImages[0]); setLightboxImages(nexoraImages); setLightboxOpen(true) }}><img
   src={nexoraImages[0].src}
