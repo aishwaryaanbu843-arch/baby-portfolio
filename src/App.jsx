@@ -192,7 +192,7 @@ function App() {
             <article className="timeline-item reveal"><div className="timeline-date">02 Aug — 15 Aug 2026</div><div className="timeline-marker" /><div><span className="timeline-kind">Experience / 02</span><h3>Aktis Engineering<br />Solutions Pvt Ltd</h3><p>SolidWorks CAD &amp; RAG Chatbot Intern</p><div className="tag-row"><span>SolidWorks model design &amp; automation</span><span>CAD automation</span><span>Custom LLM chatbot</span><span>Retrieval-Augmented Generation (RAG)</span><span>Professional engineering environment</span></div></div><div className="timeline-evidence"><button onClick={() => { setSelectedImage(proofImages[0]); setLightboxImages(proofImages.slice(0, 4)); setLightboxOpen(true) }}><img src={proofImages[0].src} alt={proofImages[0].alt} /><span>Certificate</span></button><button onClick={() => { setSelectedImage(proofImages[1]); setLightboxImages(proofImages.slice(0, 4)); setLightboxOpen(true) }}><img src={proofImages[1].src} alt={proofImages[1].alt} /><span>Model</span></button><button onClick={() => { setSelectedImage(proofImages[2]); setLightboxImages(proofImages.slice(0, 4)); setLightboxOpen(true) }}><img src={proofImages[2].src} alt={proofImages[2].alt} /><span>Detail</span></button></div></article>
           </div>
           </div>
-          <div className="proof-note"><span>Proof of experience</span><p>Selected internship and project evidence is collected in the Proof section below.</p></div>
+          
         </section>
 
         <section className="section projects-section" id="projects">
