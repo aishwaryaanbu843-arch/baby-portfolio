@@ -29,7 +29,8 @@ const navItems = ['Home', 'About', 'Journey', 'Projects', 'Skills', 'Resume', 'C
     contribution: 'Designed and developed the portfolio project experience and its visual interface.',
     outcome: 'Live web application',
     tone: 'paper',
-    liveDemo: 'https://baby-forum.netlify.app/'
+    liveDemo: 'https://baby-forum.netlify.app/',
+    github: 'https://github.com/Bhuvanesh0097/Baby-Forum' 
   },
 
   {
