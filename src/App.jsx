@@ -343,7 +343,16 @@ function App() {
         </section>
 
         
-        <section className="contact-section" id="contact"><div className="contact-inner"><div className="section-top"><span className="section-number">05</span><span className="eyebrow">Contact</span><span className="section-rule" /></div><p className="contact-kicker">Have an idea, opportunity or project in mind? Let's connect.</p><h2>Let's create<br /><i>something.</i></h2><div className="contact-links"><a href="mailto:bhuvanesh1102006@gmail.com">Email <span>bhuvanesh1102006@gmail.com ↗</span></a><a href="https://linkedin.com/in/bhuvanesh1102006" target="_blank" rel="noreferrer">LinkedIn <span>linkedin.com/in/bhuvanesh1102006 ↗</span></a><a href="https://github.com/Bhuvanesh0097" target="_blank" rel="noreferrer">GitHub <span>github.com/Bhuvanesh0097 ↗</span></a></div><div className="contact-bottom"><span>Open to conversations</span><span>Based in India · Available remotely</span></div></div></section>
+        <section className="contact-section" id="contact"><div className="contact-inner"><div className="section-top"><span className="section-number">05</span><span className="eyebrow">Contact</span><span className="section-rule" /></div>
+  
+<p className="contact-kicker">
+  Open to software development internships, projects and meaningful collaborations.
+</p>
+
+<h2>
+  Let's create<br />
+  <i>something.</i>
+</h2><div className="contact-links"><a href="mailto:bhuvanesh1102006@gmail.com">Email <span>bhuvanesh1102006@gmail.com ↗</span></a><a href="https://linkedin.com/in/bhuvanesh1102006" target="_blank" rel="noreferrer">LinkedIn <span>linkedin.com/in/bhuvanesh1102006 ↗</span></a><a href="https://github.com/Bhuvanesh0097" target="_blank" rel="noreferrer">GitHub <span>github.com/Bhuvanesh0097 ↗</span></a></div><div className="contact-bottom"><span>Open to conversations</span><span>Based in India · Available remotely</span></div></div></section>
       </main>
 
       <footer><strong>Bhuvanesh S</strong><span>Built with curiosity, code &amp; creativity.</span><span>© 2026</span></footer>
