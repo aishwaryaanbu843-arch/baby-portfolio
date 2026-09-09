@@ -174,7 +174,11 @@ function App() {
           <div className="section-top"><span className="section-number">01</span><span className="eyebrow">About</span><span className="section-rule" /></div>
           <div className="about-grid reveal">
             <div className="about-portrait"><img src="/profile.jpeg" alt="Portrait of Bhuvanesh S" /><div className="portrait-caption">Portrait / 01 <span>MVIT / 2028</span></div></div>
-            <div className="about-copy"><p className="eyebrow">About me</p><h2>Building with <em>logic.</em><br />Creating with <em>personality.</em></h2><p className="lead">Computer Science student building thoughtful digital experiences across backend, web development and AI.</p><p>My interests move between backend development, cloud computing, AI / LLM applications, automation and SEO. I like practical systems, clear interfaces and the small decisions that make digital work feel considered.</p><span className="signature">Bhuvanesh S <small>— currently learning in public</small></span></div>
+            <div className="about-copy"><p className="eyebrow">About me</p><h2>
+  I build with <em>curiosity.</em>
+  <br />
+  I create with <em>purpose.</em>
+</h2><p className="lead">Computer Science student building thoughtful digital experiences across backend, web development and AI.</p><p>My interests move between backend development, cloud computing, AI / LLM applications, automation and SEO. I like practical systems, clear interfaces and the small decisions that make digital work feel considered.</p><span className="signature">Bhuvanesh S <small>— currently learning in public</small></span></div>
           </div>
         </section>
 
