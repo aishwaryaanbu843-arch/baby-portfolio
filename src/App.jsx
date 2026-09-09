@@ -273,7 +273,32 @@ function App() {
   GitHub ↗
 </a></div></div></article>
           </div>
-          <div className="text-projects">{projects.slice(2).map(project => <article className="text-project reveal" key={project.name}><span>{project.number}</span><h3>{project.name}</h3><p>{project.copy}</p>
+          <div className="text-projects">{projects.slice(2).map(project => <article className="text-project reveal" key={project.name}><span>{project.number}</span><h3>{project.name}</h3><p>{project.copy}</p><div className="project-details">
+  <div>
+    <span className="detail-label">Problem</span>
+    <p>{project.problem}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">Solution</span>
+    <p>{project.solution}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">Tech Stack</span>
+    <p>{project.techStack.join(' • ')}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">My Contribution</span>
+    <p>{project.contribution}</p>
+  </div>
+
+  <div>
+    <span className="detail-label">Outcome</span>
+    <p>{project.outcome}</p>
+  </div>
+</div>
   <div className="project-links">
   {project.github && (
     <a
