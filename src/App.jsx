@@ -135,7 +135,7 @@ function App() {
           <span /> <span />
         </button>
         <nav className="nav-links" aria-label="Main navigation">
-          {navItems.map((item, index) => { const id = item === 'Home' ? 'top' : item.toLowerCase(); return <button className={activeSection === id ? 'active' : ''} key={item} onClick={() => scrollTo(id)}><span>{item === 'Home' ? '00' : `0${index}`}</span>{item}</button> })}
+          {navItems.map((item, index) => { const id = item === 'Home' ? 'top' : item.toLowerCase(); return <button className={activeSection === id ? 'active' : ''} key={item} onClick={() => item === 'Resume' ? window.open('/resume.pdf', '_blank') : scrollTo(id)}><span>{item === 'Home' ? '00' : `0${index}`}</span>{item}</button> })}
         </nav>
         <span className="header-mark">PORTFOLIO / 2026</span>
       </header>
