@@ -19,48 +19,57 @@ const navItems = ['Home', 'About', 'Journey', 'Projects', 'Skills', 'Resume', 'C
   },
 
   {
-  number: '02',
-  name: 'BABY FORUM',
-  type: 'Community forum web application',
-  copy: 'A Reddit-style community forum for creating and sharing posts with media uploads, threaded discussions and real-time interaction.',
-  problem: 'Online communities need a simple way for users to create posts, share media and participate in structured discussions.',
-  solution: 'Built a Reddit-style forum with authentication, media uploads, threaded comments, voting, profiles and a sortable feed.',
-  techStack: ['React', 'Vite', 'FastAPI', 'Supabase', 'PostgreSQL'],
-  contribution: 'Built the forum experience across the React frontend and FastAPI backend, integrating Supabase authentication, database and media storage.',
-  outcome: 'Deployed community forum with responsive mobile-first UI',
-  tone: 'paper',
-  github: 'https://github.com/Bhuvanesh0097/Baby-Forum',
-  liveDemo: 'https://baby-forum.netlify.app/'
-},
+    number: '02',
+    name: 'BABY FORUM',
+    type: 'Featured project',
+    copy: 'An interactive community/forum web application focused on creating, sharing and discussing posts.',
+    problem: 'Users need a simple platform to create, share and discuss community posts.',
+    solution: 'Built a web-based community/forum experience centered around post creation, sharing and discussion.',
+    techStack: ['Web Application'],
+    contribution: 'Designed and developed the portfolio project experience and its visual interface.',
+    outcome: 'Live web application',
+    tone: 'paper',
+    liveDemo: 'https://baby-forum.netlify.app/'
+  },
 
-{
+  {
+    
   number: '03',
   name: 'NETFENDER',
   type: 'AI-powered phishing detection system',
-  copy: 'An AI-powered phishing defense platform that analyzes emails and SMS messages for suspicious activity in near-real-time.',
-  problem: 'Phishing attacks can arrive through both email and mobile messages, making fast and consistent threat detection difficult.',
-  solution: 'Combined rule-based screening with OpenAI-powered analysis, email scanning through IMAP and Android SMS processing through ADB.',
-  techStack: ['React', 'Express', 'PostgreSQL', 'OpenAI GPT', 'IMAP', 'ADB'],
-  contribution: 'Built the phishing-detection workflow, threat-monitoring dashboard and integrations for email and Android message processing.',
+  copy: 'An AI-powered phishing detection system that analyzes emails and SMS in near-real-time.',
+  problem: 'Users need faster detection of phishing threats across email and mobile messages.',
+  solution: 'Built a detection system with email processing and mobile integration.',
+  techStack: ['AI', 'IMAP', 'SMTP', 'ADB'],
+  contribution: 'Built the phishing-detection workflow and integrated email and Android communication interfaces.',
   outcome: "AURISTRA'26 Hackathon project",
   tone: 'ink',
   github: 'https://github.com/Bhuvanesh0097/NetFender'
 },
+  
 
-{
-  number: '04',
-  name: 'MINDMEND',
-  type: 'AI-based stress detection and wellness system',
-  copy: 'An AI-based application that analyzes text and voice input to identify emotional patterns, detect stress and provide personalized support.',
-  problem: 'Stress and emotional changes can be difficult to recognize consistently without structured analysis and tracking.',
-  solution: 'Built emotion and stress analysis using voice/text input, sentiment scoring, personalized coping strategies, mood tracking and journaling.',
-  techStack: ['Python', 'Streamlit', 'CNN', 'LSTM', 'AI / NLP'],
-  contribution: 'Developed the stress-detection workflow and used CNN/LSTM models for feature extraction and temporal analysis.',
-  outcome: '85% accuracy • 32% reduction in user-reported stress levels',
-  tone: 'clay',
-  github: 'https://github.com/Bhuvanesh0097/MindMend'
-},
- ]
+  {
+    number: '04',
+    name: 'MINDMEND',
+    type: 'AI-based stress detection system',
+    copy: 'An AI-based web application that detects and classifies stress levels from voice signals.',
+    problem: 'Stress levels can be difficult to identify consistently from user interactions alone.',
+    solution: 'Built a voice-based stress detection system using deep learning for feature extraction and temporal analysis.',
+    techStack: ['Python', 'CNN', 'LSTM'],
+    contribution: 'Developed the stress-detection workflow using CNN and LSTM-based analysis.',
+    outcome: '85% accuracy • 32% reduction in user-reported stress levels',
+    tone: 'clay',
+    github: 'https://github.com/Bhuvanesh0097/MindMend'
+  }
+]
+
+const skills = {
+  Development: ['HTML', 'CSS', 'JavaScript', 'Python', 'Java', 'DSA', 'MySQL', 'FastAPI', 'Flask API', 'REST API'],
+  Cloud: ['AWS', 'EC2', 'S3', 'IAM', 'VPC', 'CloudWatch'],
+  Tools: ['Git', 'GitHub', 'SolidWorks', 'C#'],
+  Interests: ['Cloud Computing', 'Backend Development', 'Web Development', 'AI / LLM', 'RAG', 'SEO'],
+}
+
 const babyForumImages = [
   { src: '/babyforum/babyforum1.jpeg', alt: 'Baby Forum login page' },
   { src: '/babyforum/babyforum2.jpeg', alt: 'Baby Forum homepage' },
